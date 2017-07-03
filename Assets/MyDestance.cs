@@ -20,9 +20,9 @@ public class MyDestance : MonoBehaviour {
 	void Update () {
 
 
-        if (unitychan.transform.position.z > this.transform.position.z)
+        if (unitychan.transform.position.z > this.transform.position.z + 5) //5は余裕を持たすために設定
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
 		
 	}
